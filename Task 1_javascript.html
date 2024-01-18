@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zennode</title>
+</head>
+<body>
+
+<script>
+    const products={"Product A": 20, "Product B": 40, "Product C": 50};
+
+    const cart=[];
+    let subtotal=0;
+    let total_quantity=0;
+    let gift_wrap_fee=0;
+    let shipping_fee=0;
+    let discount=null;
+
+    for (const [product, price] of Object.entries(products)) {
+        const quantity = parseInt(window.prompt(`Enter quantity for ${product} `), 10);
+        const gift_wrap = window.prompt(`Do you want gift wrap for ${product}? [yes/no] `).toLowerCase() === 'yes';
+
+        const item={ product: product, quantity: quantity, total_price: price * quantity, gift_wrap: gift_wrap };
+
+        cart.push(item);
+        // console.log(cart)
+        subtotal+=item.total_price;
+        total_quantity+=quantity;
+         if (item.gift_wrap) {
+            gift_wrap_fee += 1; //$1 per gift wrap
+        }
+
+    }
+
+    let tiered_50 =false;
+    for (const i of cart) {
+        if (total_quantity > 30 && i.quantity>15) {
+            tiered_50 = true;
+            break;
+        }
+
+    }
+    if (tiered_50) {
+        discount = ["tiered_50_discount", subtotal*0.5];
+    }
+
+    else if (total_quantity>20) {
+        discount = ["bulk_10_discount", 10];
+
+    }
+    else if (total_quantity >10) {
+
+        discount = ["bulk_5_discount applied", subtotal*0.05];
+
+    }
+
+
+    else if (subtotal>200) {
+        discount = ["flat_10_discount", 10];
+    }
+
+
+ shipping_fee = Math.ceil(total_quantity / 10) * 5;
+    console.log("\nOrder Summary:\n---------------");
+    for (const item of cart) {
+        console.log(`You ordered ${item.quantity} ${item.product} => Total: $${item.total_price}`);
+    }
+
+    console.log(`\nSubtotal=> $${subtotal}`);
+
+    if (discount) {
+        console.log(`Discount Applied=> ${discount[0]} -> Amount: $${discount[1]}`);}
+
+    console.log(`Gift Wrap Fee=> $${gift_wrap_fee}`);
+    console.log(`Shipping Fee=> $${shipping_fee}`);
+
+
+
+    const totalAmount = subtotal - (discount ? discount[1] : 0) + gift_wrap_fee + shipping_fee;
+    console.log("\n-----------------------");
+    console.log(`Total Amount=> $${totalAmount}`);
+</script>
+</body>
+</html>

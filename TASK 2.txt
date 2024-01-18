@@ -1,0 +1,35 @@
+Task 2
+------
+
+Why do you like to join as a Software developer?
+
+I'm excited to join as a software developer because it aligns perfectly with my passion for technology and latest tech trends. Tech industry keeps changing rapidly and I love to keep up latest tech trends.
+-----------------------------------------------------------------------------
+List top 3 softwares / tools that inspire you. Why do these tools inspire you?
+
+a) VSCode: Power of VS Code as a code editor makes my coding easier with its support for various programming languages and extensions.
+
+b) PyCharm: integration with Python frameworks like Flask and Django made it a go-to choice for me.
+
+c) GitHub: helps me by tracking changes, and managing projects. 
+-----------------------------------------------------------------------------
+List top 3 organisations you like to join in your career & why you like these organisations.
+
+a) Zennode: Such a reputed company. Considers employees as family members rather than just considering as an employee.
+
+b) Gritstone: Such a reputed company. Huge workspace.
+
+c) Nucore: Such a reputed company. Good workspace
+-----------------------------------------------------------------------------
+How you position yourself in this industry after 2 years.
+
+I see myself as a very successful professional who has gained lot of experience, contributed a lot to the company, gained good relationships and he who makes use of latest tech trends which increases work productivity.
+-----------------------------------------------------------------------------
+List 3 projects / products you have built or have planned to build in the upcoming year, also explain your role in the same.
+
+a) Movie Booking and Recommendation System: This was MCA main project for PC Talkies, Mukkam. Web based application for Theatre owners to book ticekts for customers who visits theatre in person, mobile based application for customers to book tickets online. Also a recommendation system which suggests similar movies to customers.
+
+b) Used Bikes Management System: This was MCA mini project for G.K Motors, Mukkam. Web based application for Shop owner to manage vehicles and customers to pre-book the vehicles.
+
+c) Indoor Mobile Localization and Navigation: This was UG mini project. Web based application for mall. Customers can locate specific shopes in Mall.
+-----------------------------------------------------------------------------

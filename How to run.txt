@@ -1,0 +1,18 @@
+To run Python file Task1: Task1_python.py
+-------------------------------------
+1) open "Task1_python.py" file in PyCharm or in Vscode
+
+2) Run the file
+
+3) Enter the inputs in Terminal
+
+
+To run Javascript file in HTML Task1: Task 1_javascript.html
+-------------------------------------
+1) open "Task 1_javascript.html" file in browser like Google Chrome, Firefox etc.
+
+2) Enter the input prompts
+
+3) After entering all input prompts, Right click on the mouse -> Inspect -> Click on "console"
+
+4) There you can see the output
